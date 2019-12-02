@@ -1,0 +1,50 @@
+.main
+  padding-top: 100px
+  &-items
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+  &-item
+    color: $active-color
+    ul
+      margin-bottom: 40px
+    &__descr
+      &_subtitle
+        font-size: 32px
+        font-weight: 300
+        margin-bottom: 15px
+        font-family: "Montserrat Light"
+      &_title
+        font-size: 45px
+        font-weight: 700
+        margin-bottom: 15px
+        font-family: Montserrat
+      &_text
+        font-size: 18px
+        font-weight: 400
+        margin-bottom: 27px
+    &__photo
+      margin-right: 7%
+    &__icon
+      margin-right: 20px
+    &__btn
+      box-shadow: 0px 0px 5px rgba(0, 0, 0, 1)
+      background-color: $active-color
+      border: 2px solid transparent
+      color: #333
+      padding: 21px 49px
+      margin-right: 10px
+      margin-top: 40px
+      transition: box-shadow .1s linear
+      &:hover
+        box-shadow: 0 0 20px
+        fade(#000,25%)
+
+      &_two
+        color: $active-color
+        padding: 21px 31px
+        &:hover
+          background-color: $active-color
+          color: #333
+          transition: background-color .1s linear

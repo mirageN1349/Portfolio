@@ -1,0 +1,115 @@
+.header
+  margin-bottom: 18px
+  padding-top: 15px
+  &-fixed
+    background-color: #4682B9
+    height: 80px
+    width: 100%
+    position: fixed
+    top: 0
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 2)
+
+  &-items
+    position: fixed
+    top: 0
+
+    display: flex
+    justify-content: space-between
+    align-items: center
+    background-color: #4682B9
+    width: 100%
+    max-width: 1150px
+    margin: 0 auto
+    padding: 10px 0
+  &-item
+    color: $active-color
+    display: flex
+    justify-content: center
+    align-items: center
+    &__burger
+      display: none
+      width: 30px
+      height: 30px
+      background-color: transparent
+      border: 1px solid #transparent
+      margin-left: 90px
+      position: relative
+      span,span::before,span::after
+        position: absolute
+        top: 50%
+        width: 30px
+        margin-top: -1px
+        left: 50%
+        margin-left: -15px
+        height: 2px
+        background-color: #fff
+      span::before,span::after
+        content: ""
+        display: block
+        transition: 0.2s
+      span::before
+        transform: translateY(-8px)
+      span::after
+        transform: translateY(8px)
+    &__active
+      span
+        height: 0
+      span::before
+        transform: rotate(45deg)
+      span::after
+        transform: rotate(-45deg)
+    &__btn
+      color: #fff
+      &:hover
+        background-color: $active-color
+        color: #333
+        transition: background-color .1s linear
+
+    &__photo
+      border-radius: 100%
+      height: 60px
+      width: 60px
+      background-color: $active-color
+      text-align: center
+      margin-right: 10px
+      &_text
+        font-size: 22px
+        padding-top: 28%
+        color: #fff
+
+    &__text
+      &_title
+        font-size: 16px
+        font-weight: 700
+        margin-bottom: 2px
+        font-family: Montserrat
+        color: #fff
+      &__subtitle
+        font-size: 12px
+        font-weight: 400
+        font-family: Montserrat
+    &__link
+      text-decoration: none
+      font-size: 14px
+      font-weight: 800
+      text-transform: uppercase
+      color: $active-color
+      margin-right: 40px
+      font-family: Montserrat
+      position: relative
+      &::after
+        content: ""
+        width: 0
+        height: 2px
+        background-color: $active-color
+        position: absolute
+        bottom: -5px
+        left: 0
+        z-index: 1
+        transition: width .2s linear
+      &:hover
+        &:after
+          width: 100%
+    &-list
+      display: flex
+      justify-content: space-between

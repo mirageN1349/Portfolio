@@ -1,0 +1,45 @@
+.about
+  margin-bottom: 130px
+  &-blocks
+    display: flex
+    justify-content: space-around
+    align-items: center
+  &-block
+    flex-basis: 50%
+    max-width: 475px
+    &__subtitle
+      font-size: 45px
+      font-weight: 700
+      line-height: 15px
+      text-transform: uppercase
+      margin-bottom: 20px
+      color: #FFF0F5
+    &__title
+      font-size: 92px
+      font-weight: 700
+      text-transform: uppercase
+      color: #00BFFF
+      margin-bottom: 30px
+    &__text
+      font-size: 12px
+      font-weight: 300
+      color: #fff
+    &__btn
+      box-shadow: 0px 0px 5px rgba(0, 0, 0, 1)
+      background-color: $active-color
+      border: 2px solid transparent
+      color: #333
+      padding: 21px 49px
+      margin-right: 10px
+      margin-top: 40px
+      transition: box-shadow .1s linear
+      &:hover
+        box-shadow: 0 0 20px
+        fade(#000,25%)
+      &_two
+        color: $active-color
+        padding: 21px 31px
+        &:hover
+          background-color: $active-color
+          color: #333
+          transition: background-color .1s linear

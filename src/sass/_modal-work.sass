@@ -1,0 +1,89 @@
+.modal-work
+  display: flex
+  &__preview
+    width: 65%
+    position: relative
+    overflow: hidden
+  &__content
+    width: 35%
+    padding: 30px 99px 15px 26px
+    position: relative
+  &__photo
+    position: absolute
+    top: 50%
+    left: 50%
+    z-index: 1
+    transform: translate3d(-50%, -50%, 0)
+  &__title
+    font-size: 32px
+    font-weigh: 700
+    text-transform: uppercase
+
+    margin-bottom: 5px
+  &__info
+    font-size: 18px
+    color: gray
+    text-transform: uppercase
+    padding: 0
+  &__task
+    &_title
+      margin-bottom: 2px
+    &_text
+      margin-bottom: 20px
+      font-weight: 300
+      font-size: 13px
+      p
+        margin: 0
+
+  &__timescales
+    &_title
+      margin-bottom: 2px
+      margin: 0
+    &_text
+      font-weight: 300
+      font-size: 13px
+      margin: 0
+      margin-bottom: 20px
+
+  &__budget
+    &_title
+      margin-bottom: 2px
+      margin: 0
+    &_text
+      font-weight: 300
+      font-size: 13px
+      margin: 0
+      margin-bottom: 40px
+  &__button
+    margin-bottom: 130px
+  &__btn
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 2)
+    background-color: #4682B9
+    border: 2px solid transparent
+    color: #fff
+    padding: 21px 35px
+    margin-right: 10px
+    transition: box-shadow .1s linear
+    &:hover
+      box-shadow: 0px 0px 15px rgba(0, 0, 0, 1)
+    &_two
+      color: #333
+      padding: 21px 12px
+      border: 2px solid #4682B9
+      &:hover
+        background-color: #4682B9
+        color: #fff
+        transition: background-color .1s linear
+  &__footer
+    width: 93%
+    display: flex
+    justify-content: space-between
+    padding-bottom: 10px
+    padding: 16px 12px
+    position: absolute
+    bottom: 0
+    left: 0
+    z-index: 1
+    &_btn
+      border: none
+      background-color: #fff
